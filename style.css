@@ -1,0 +1,4 @@
+div#main{
+    display: inline-flex;
+}
+div#leftPanel{width: min-content;}

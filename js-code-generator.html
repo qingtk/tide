@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js code generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="micro.js"></script>
+</head>
+<body>
+<div id="toolbar">
+
+</div>
+<div id="main">
+    <div id="leftPanel">
+        <a href="#">Number</a> <a href="#">String</a> BigInt <br>
+        <button>--&gt;</button>
+        <textarea name="numberHint" id="numberHint" cols="30" rows="35">
+--Value properties--
+Infinity
+NaN
+undefined
+null literal
+globalThis
+--global functions--
+eval()
+uneval() 
+isFinite()
+isNaN()
+parseFloat()
+parseInt()
+decodeURI()
+decodeURIComponent()
+encodeURI()
+encodeURIComponent()
+escape() 
+unescape() 
+--Fundamental objects--
+Object
+Function
+Boolean
+Symbol
+Error
+AggregateError 
+EvalError
+InternalError 
+RangeError
+ReferenceError
+SyntaxError
+TypeError
+URIError
+--Numbers and dates--
+Number
+BigInt
+Math
+Date
+--Text processing--
+String
+RegExp
+--Indexed collections--
+Array
+Int8Array
+Uint8Array
+Uint8ClampedArray
+Int16Array
+Uint16Array
+Int32Array
+Uint32Array
+Float32Array
+Float64Array
+BigInt64Array
+BigUint64Array
+--Keyed collections--
+Map
+Set
+WeakMap
+WeakSet
+--Structured data--
+ArrayBuffer
+SharedArrayBuffer 
+Atomics 
+DataView
+JSON
+--Control abstraction objects--
+Promise
+Generator
+GeneratorFunction
+AsyncFunction 
+--Reflection--
+Reflect
+Proxy
+--Internationalization--
+Intl
+Intl.Collator
+Intl.DateTimeFormat
+Intl.ListFormat
+Intl.NumberFormat
+Intl.PluralRules
+Intl.RelativeTimeFormat
+Intl.Locale
+--WebAssembly--
+WebAssembly
+WebAssembly.Module
+WebAssembly.Instance
+WebAssembly.Memory
+WebAssembly.Table
+WebAssembly.CompileError
+WebAssembly.LinkError
+WebAssembly.RuntimeError
+--Other--
+arguments
+
+Array
+属性
+Array.length
+Array.prototype
+Array.prototype[@@unscopables]
+方法
+Array.from()
+Array.isArray()
+Array.of()
+Array.prototype.concat()
+Array.prototype.copyWithin()
+Array.prototype.entries()
+Array.prototype.every()
+Array.prototype.fill()
+Array.prototype.filter()
+Array.prototype.find()
+Array.prototype.findIndex()
+Array.prototype.flat()
+Array.prototype.flatMap()
+Array.prototype.forEach()
+Array.prototype.includes()
+Array.prototype.indexOf()
+Array.prototype.join()
+Array.prototype.keys()
+Array.prototype.lastIndexOf()
+Array.prototype.map()
+Array.prototype.pop()
+Array.prototype.push()
+Array.prototype.reduce()
+Array.prototype.reduceRight()
+Array.prototype.reverse()
+Array.prototype.shift()
+Array.prototype.slice()
+Array.prototype.some()
+Array.prototype.sort()
+Array.prototype.splice()
+Array.prototype.toLocaleString()
+Array.prototype.toSource()
+Array.prototype.toString()
+Array.prototype.unshift()
+Array.prototype.values()
+Array.prototype[@@iterator]()
+Array.unobserve()
+get Array[@@species]
+
+BigInt
+BigInt.prototype
+
+BigInt.asIntN()
+BigInt.asUintN()
+BigInt.prototype.toLocaleString()
+BigInt.prototype.toString()
+BigInt.prototype.valueOf()
+
+const huge = BigInt(9007199254740991);
+2n**1277n-1n
+BigInt操作符： + - * / ** ;除 >>> （无符号右移）之外的 位操作 也支持。
+BigInt64Array
+BigUint64Array 
+
+Date.UTC()
+Date.now()
+Date.parse()
+Date.prototype.getDate()
+Date.prototype.getDay()
+Date.prototype.getFullYear()
+Date.prototype.getHours()
+Date.prototype.getMilliseconds()
+...
+Date.prototype.toJSON()
+Date.prototype.toLocaleString()
+Date.prototype.toLocaleTimeString()
+Date.prototype.toSource()
+Date.prototype.toString()
+Date.prototype.toTimeString()
+
+Number.isFinite()
+Number.isInteger()
+Number.isNaN()
+Number.isSafeInteger()
+Number.parseFloat()
+Number.parseInt()
+Number.prototype.toExponential()
+Number.prototype.toFixed()
+Number.prototype.toLocaleString()
+Number.prototype.toPrecision()
+Number.prototype.toSource()
+Number.prototype.toString()
+Number.prototype.valueOf()
+
+Number.EPSILON
+Number.MAX_SAFE_INTEGER
+Number.MAX_VALUE
+Number.MIN_SAFE_INTEGER
+Number.MIN_VALUE
+Number.NEGATIVE_INFINITY
+Number.NaN
+Number.POSITIVE_INFINITY
+
+--TypedArray
+Int8Array
+Uint8Array
+...
+Uint64Array
+
+Standard built-in objects - Object
+--Properties
+Object.prototype
+Object.prototype.__proto__
+Object.prototype.constructor
+--Methods
+Object.assign()
+Object.create()
+Object.defineProperties()
+Object.defineProperty()
+Object.entries()
+Object.freeze()
+Object.fromEntries()
+Object.getOwnPropertyDescriptor()
+Object.getOwnPropertyDescriptors()
+Object.getOwnPropertyNames()
+Object.getOwnPropertySymbols()
+Object.getPrototypeOf()
+Object.is()
+Object.isExtensible()
+Object.isFrozen()
+Object.isSealed()
+Object.keys()
+//del Object.observe()
+Object.preventExtensions()
+Object.prototype.__defineGetter__()
+Object.prototype.__defineSetter__()
+Object.prototype.__lookupGetter__()
+Object.prototype.__lookupSetter__()
+//del Object.prototype.eval()
+Object.prototype.hasOwnProperty()
+Object.prototype.isPrototypeOf()
+Object.prototype.propertyIsEnumerable()
+Object.prototype.toLocaleString()
+Object.prototype.toSource()
+Object.prototype.toString()
+//del Object.prototype.unwatch()
+Object.prototype.valueOf()
+//del Object.prototype.watch()
+Object.seal()
+Object.setPrototypeOf()
+//del Object.unobserve()
+Object.values()
+
+Function
+--Properties
+Function.arguments
+Function.caller
+Function.displayName
+Function.length
+Function.name
+Function.prototype
+--Methods
+Function.prototype.apply()
+Function.prototype.bind()
+Function.prototype.call()
+Function.prototype.toSource()
+Function.prototype.toString()
+
+
+
+Function
+属性
+Function.arguments
+Function.arity
+Function.caller
+Function.displayName
+Function.length
+Function.prototype
+Function.name
+方法
+Function.prototype.apply()
+Function.prototype.bind()
+Function.prototype.call()
+Function.prototype.isGenerator()
+
+String
+Properties
+String.prototype
+String.prototype.length
+Methods
+String.fromCharCode()
+String.fromCodePoint()
+String.prototype.anchor()
+String.prototype.big()
+String.prototype.blink()
+String.prototype.bold()
+String.prototype.charAt()
+String.prototype.charCodeAt()
+String.prototype.codePointAt()
+String.prototype.concat()
+String.prototype.endsWith()
+String.prototype.fixed()
+String.prototype.fontcolor()
+String.prototype.fontsize()
+String.prototype.includes()
+String.prototype.indexOf()
+String.prototype.italics()
+String.prototype.lastIndexOf()
+String.prototype.link()
+String.prototype.localeCompare()
+String.prototype.match()
+String.prototype.matchAll()
+String.prototype.normalize()
+String.prototype.padEnd()
+String.prototype.padStart()
+//del String.prototype.quote()
+String.prototype.repeat()
+String.prototype.replace()
+String.prototype.search()
+String.prototype.slice()
+String.prototype.small()
+String.prototype.split()
+String.prototype.startsWith()
+String.prototype.strike()
+String.prototype.sub()
+String.prototype.substr()
+String.prototype.substring()
+String.prototype.sup()
+String.prototype.toLocaleLowerCase()
+String.prototype.toLocaleUpperCase()
+String.prototype.toLowerCase()
+String.prototype.toSource()
+String.prototype.toString()
+String.prototype.toUpperCase()
+String.prototype.trim()
+String.prototype.trimEnd()
+String.prototype.trimStart()
+String.prototype.valueOf()
+String.prototype[@@iterator]()
+String.raw()
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+</textarea>
+    </div>
+    <div id="editorPanel">
+	<span><a href="#">jsdemos.txt</a></span><br>
+<textarea name="editor" id="editor" cols="60" rows="30">
+let ul1=$('ul');
+ul1.addEventListener('click', function(ev) {
+  if( ev.target.tagName === 'LI') {
+     ev.target.classList.toggle('done'); 
+  }
+}, false);
+
+Object.assign(window,{location:'http://a-boy.tk'})
+
+if(!prompt('输入你的关键词：','pixel')){
+	$('a[href="#"]').click()
+}
+
+parseInt('101', 2) // 5
+//Chrome中奇怪的js运算
+parseInt(0.0000008) // 8
+
+'\ua163'
+
+// 创建过去七天的数组
+[...Array(7).keys()].map(days => new Date(Date.now() - 86400000 * days));
+
+// 生成长度为11的随机字母数字字符串
+Math.random().toString(36).substring(2);// 4yzqwrvw9iu
+
+// 两种方法生成随机十六进制颜色代码 如：'#c618b2'
+'#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); 
+document.body.style.backgroundColor = '#' +Math.random().toString(16).substr(2,6)
+
+//获取URL的查询参数
+//?foo=bar&baz=bing => {foo: bar, baz: bing}
+q={};location.search.replace(/([^?&=]+)=([^&]+)/g,(_,k,v)=>q[k]=v);q;
+
+Object.fromEntries(new URLSearchParams('name=xuxi&year=24'))
+//返回 {name: "xuxi", year: "24"}
+
+//网页上显示本地时间
+setInterval(()=>document.getElementById("timebar").innerHTML=new Date().toLocaleString()/*.slice(10,19)*/) 
+
+//计算耗费的微秒数
+start=Date.now()
+/*for(;;) ...*/
+spent=Date.now() - start
+
+//混淆数组shuffle
+arr=[...Array(7).keys()]
+arr.slice().sort(() => Math.random() - 0.5)
+
+// 数组去重
+[...new Set(arr)]
+
+//数字从右边起，隔三位加上一个逗号
+'1234567890'.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+
+//freeze冻结对象，使它不可修改
+var obj = {foo: 'bar'};
+Object.freeze(obj);
+
+</textarea></div>
+    <div id="aiPanel"><textarea name="ai" id="ai" cols="55" rows="35">
+/*
+* polar.js v1.0.0
+* (c) 2018-2019 Cody Luo
+* Released under the MIT License.
+*/
+
+function _(id) {
+    if (id == null) return document.body;
+    if(Number.isInteger(id)) return document.body.children[id];
+    return document.getElementById(id)
+}
+
+function $(sel) {
+    return document.querySelector(sel);
+}
+
+function $all(sel) {
+    return document.querySelectorAll(sel);
+}
+
+//let w=window;
+
+
+</textarea></div>
+</div>
+<script>
+   // window.cursor=_('editor').onselect
+</script>
+<div id="footer">+-*/()[]{}</div>
+</body>
+</html>
