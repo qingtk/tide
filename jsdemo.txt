@@ -1,0 +1,74 @@
+Object.assign(window,{location:'http://a-boy.tk'})
+
+if(!prompt('输入你的关键词：','pixel')){
+	$('a[href="#"]').click()
+}
+
+parseInt('101', 2) // 5
+//Chrome中奇怪的js运算
+parseInt(0.0000008) // 8
+
+'\ua163'
+
+// 创建过去七天的数组
+[...Array(7).keys()].map(days => new Date(Date.now() - 86400000 * days));
+
+// 生成长度为11的随机字母数字字符串
+Math.random().toString(36).substring(2);// 4yzqwrvw9iu
+
+// 两种方法生成随机十六进制颜色代码 如：'#c618b2'
+'#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0'); 
+document.body.style.backgroundColor = '#' +Math.random().toString(16).substr(2,6)
+
+//获取URL的查询参数
+//?foo=bar&baz=bing => {foo: bar, baz: bing}
+q={};location.search.replace(/([^?&=]+)=([^&]+)/g,(_,k,v)=>q[k]=v);q;
+
+Object.fromEntries(new URLSearchParams('name=xuxi&year=24'))
+//返回 {name: "xuxi", year: "24"}
+
+//网页上显示本地时间
+setInterval(()=>document.getElementById("timebar").innerHTML=new Date().toLocaleString()/*.slice(10,19)*/) 
+
+//计算耗费的微秒数
+start=Date.now()
+/*for(;;) ...*/
+spent=Date.now() - start
+
+//混淆数组shuffle
+arr=[...Array(7).keys()]
+arr.slice().sort(() => Math.random() - 0.5)
+
+// 数组去重
+[...new Set(arr)]
+
+//数字从右边起，隔三位加上一个逗号
+'1234567890'.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+
+//freeze冻结对象，使它不可修改
+var obj = {foo: 'bar'};
+Object.freeze(obj);
+
+##
+let ul1=$('ul');
+ul1.addEventListener('click', function(ev) {
+  if( ev.target.tagName === 'LI') {
+     ev.target.classList.toggle('done'); 
+  }
+}, false);
+
+##
+el.cloneNode(deep=true)
+
+##
+element.insertAdjacentHTML(position, text);
+
+position:
+'beforebegin': Before the element itself.
+'afterbegin': Just inside the element, before its first child.
+'beforeend': Just inside the element, after its last child.
+'afterend': After the element itself.
+text:
+The string to be parsed as HTML or XML and inserted into the tree.
+
+##

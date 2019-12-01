@@ -12,6 +12,18 @@ HTML速查表
 </body>
 </html>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="icon" type="image/icon" href="/favicon.ico" />
+<meta http-equiv="refresh" content="5;URL='http://thetudors.example.com/'" />
+
 基本标签（Basic Tags）
 <h1>最大的标题</h1>
 <h2> . . . </h2>
@@ -169,6 +181,7 @@ HTML5提供了新的元素来创建更好的页面结构：
   如果你的浏览器不支持 video 标签此行将显示...
 </video>
 
+<audio src="horse.mp3" controls></audio>
 <audio controls autoplay>
   <source src="horse.ogg" type="audio/ogg">
   <source src="horse.mp3" type="audio/mpeg">
