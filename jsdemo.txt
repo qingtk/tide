@@ -49,7 +49,7 @@ arr.slice().sort(() => Math.random() - 0.5)
 var obj = {foo: 'bar'};
 Object.freeze(obj);
 
-##
+//
 let ul1=$('ul');
 ul1.addEventListener('click', function(ev) {
   if( ev.target.tagName === 'LI') {
@@ -57,10 +57,10 @@ ul1.addEventListener('click', function(ev) {
   }
 }, false);
 
-##
+//
 el.cloneNode(deep=true)
 
-##
+//
 element.insertAdjacentHTML(position, text);
 
 position:
@@ -71,4 +71,26 @@ position:
 text:
 The string to be parsed as HTML or XML and inserted into the tree.
 
-##
+
+// fetch and Promise
+const fetchPromise = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+
+fetchPromise
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data[0].name);
+  });
+
+
+// a dedicated WebWorker 
+     // generate.js
+addEventListener("message", (message) => {
+  if (message.data.command === 'generate') {
+    generatePrimes(message.data.quota);
+  }
+});
+
+function generatePrimes(quota) {
+  //...
+   postMessage(primes.length);
+}
