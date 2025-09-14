@@ -1,0 +1,30 @@
+{
+  "applicationId": "tide.app",
+  "defaultMode": "window",
+  "port": 0,
+  "enableServer": true,
+  "url": "/resources/index.html",
+  "mode": "window",
+  "window": {
+    "title": "Tide - Markdown Editor",
+    "width": 1100,
+    "height": 720,
+    "minWidth": 800,
+    "minHeight": 600,
+    "resizable": true,
+    "exitProcessOnClose": true
+  },
+  "cli": {
+    "binaryName": "neu",
+    "binaryVersion": "6.2.0"
+  },
+  "modes": [
+    "window",
+    "browser"
+  ]
+  ,
+  "icon": "resources/icon.png",
+  "icons": {
+    "64": "resources/icon.png"
+  }
+}

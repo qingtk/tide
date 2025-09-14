@@ -1,0 +1,14 @@
+{
+  "name": "tide",
+  "version": "0.1.0",
+  "description": "Tide — Neutralino markdown editor",
+  "main": "resources/index.html",
+  "icon": "resources/icon.png",
+  "scripts": {
+    "start": "neu run",
+    "build": "neu build"
+  },
+  "dependencies": {
+    "@neutralinojs/lib": "^6.2.0"
+  }
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tide — Markdown Editor</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Tide</h1>
+        <div class="controls">
+          <button id="open-docs">Docsify Preview</button>
+          <button id="open-file">Open</button>
+          <button id="save-file">Save</button>
+          <input id="file-path" placeholder="Filename (e.g. notes.md)" />
+          <button id="theme-toggle" title="Toggle theme">Theme</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="editor">
+          <div id="editor" style="height:100%; min-height:400px;"></div>
+        </section>
+        <div id="splitter" role="separator" aria-orientation="vertical" tabindex="0"></div>
+        <section class="preview">
+          <div id="preview-inner"></div>
+        </section>
+      </main>
+
+      <footer>
+        <small>Built with Neutralinojs + OverType + docsify — Tide</small>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/overtype/dist/overtype.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
